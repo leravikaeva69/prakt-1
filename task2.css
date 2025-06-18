@@ -1,0 +1,90 @@
+/* Исправлено: font-famali → font-family */
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    /* Исправлено: borden-box → border-box */
+    box-sizing: border-box;
+}
+
+/* Исправлено: добавлена точка перед именем класса */
+.back-to-main {
+    /* Исправлено: display;blok → display: block */
+    display: block;
+    /* Исправлено: margin;20px → margin: 20px */
+    margin: 20px;
+    width: max-content;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+.card {
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    /* Исправлено: magrin → margin */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    /* Исправлено: rdba → rgba */
+    box-shadow: 0px 5px 15px rgba(0,0,0,.1);
+    /* Исправлено: tranzition:0,3c → transition: 0.3s */
+    transition: 0.3s;
+}
+
+/* Исправлено: nover → hover */
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card .favorit a {
+    /* Исправлено: text- decoration: nont → text-decoration: none */
+    text-decoration: none;
+}
+
+.card img {
+    /* Исправлено: 100 % → 100% */
+    width: 100%;
+}
+
+.card h3 {
+    margin: 16px 0;
+    font-size: 20px;
+}
+
+.card .info {
+    line-height: 1.2;
+    text-align: justify;
+    margin: 16px 0;
+}
+
+.card .price {
+    color: #2c3e50;
+    /* Исправлено: font -weight → font-weight */
+    font-weight: bold;
+    /* Исправлено: fond-size → font-size */
+    font-size: 24px;
+}
+
+.card .old-price {
+    color: #e74c3c;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+
+.card button {
+    color: white;
+    /* Исправлено: background; linear-gradiment → background: linear-gradient */
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Исправлено: .card button:hover( → .card button:hover { */
+.card button:hover {
+    opacity: 0.8;
+}
