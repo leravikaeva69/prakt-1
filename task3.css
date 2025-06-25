@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    padding:56px 80px;
+}
+header{
+    display:flax;
+    justify-content:space-between;
+    aligt-items:center;
+}
+header nav{
+    display:flex;
+    gap:48px;der-radius:8px;
+    border:none;
+    cursor:pointer;
+    aligt-items:center;
+}
+header button, .hero-produkt-description button{
+    background: black;
+    color: white;
+    width:99px;
+    height:52px;
+    border-radius: 8px;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:500;
+}
+.logo header nav a, hero-product-about
+.hero-product-additional-details
+.product-card-figcaption{
+    color:black;
+    text-decjretion:none;
+    font-weight:500;
+    font-size:20px;
+    line-height:150%;
+
+}
+.hero-product{
+    margin:56px 0px 80px;
+    display:flex;
+    justify-content:space-between;
+}
+.hero-product-description{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+    max-width:515px;
+}
+h1{
+    font-size:40pxж
+    font-weight: 600;
+    line-height: 110 %;
+}
+.hero-product-description h2,
+.hero-product-price
+.product h2,
+.footer-info h2{
+    font-size:24px;
+    line-height:150%;
+
+}
+.hero-product-description h2,
+.hero-product-about
+.hero-product-additional-details
+.product-card-about{
+    color:#828282;
+}
+.hero-product-description button{
+    width:unset;
+}
+.hero-product-description-details{
+    font-size: 16px;
+}
+.product-cards{
+    margin:24px 0px 120px;
+    display: flex;
+    gap: 32px;
+}
+.product-card{
+    flex-auto;
+    }
+footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #E6E6E6;
+    padding-top: 48px;
+}
+.foter-links{
+    display: flex;
+    gap: 32px;
+}
+.foter-links-list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 187px;
+}
+.foter-links-list a,.foter-links h3{
+    font-weight: 500;
+    line-height: 150%;
+    color: #454545;
+    text-decoration: none;
+}
+.foter-links h3{
+    color:black;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.social-media img.hover{
+    filter: brightness(50%);
+}
