@@ -3,54 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="reset.css">
-     <link rel="stylesheet" href="task4.css"> 
-       
+    <title>Hotel Riverside</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="task4.css"> 
 </head>
 <body>
     <header>
-        <button class="burger-btn"
-        <img src="imagts/icons/burgtr-menu.svg"alt="">
+        <!-- Исправлено: правильно закрыт тег button -->
+        <button class="burger-btn">
+            <img src="images/icons/burger-menu.svg" alt="Menu"> <!-- Исправлен путь и alt -->
+        </button>
+
+        <a href="task4.html" class="logo">
+            Riverside
+        </a>
         
-
-    <a href="task4.html"class ="logo">
-    Riverside
-    </a>
-    <nav>
-    <a href="#"> Abuot us </a>
- <a href="#"> Events </a>
- <a href="#"> Contact us </a>
-
-<button> book </button>
-</nav>
-<div class=":lang">
-<img src="imagts/icons/lang.svg"alt="">
-<span> En </span>
-</div>
-</button>
-        </header>
-        <main>
-            <section class="hero">
-                <div class="hero-choose">
-                    <h4> Hotel or destination</h4>
-                    <select name="id">
-                    <option value=">Select</option>
-                    </select>
-                </div>
-                  <div class="hero-choose">
-                    <h4> Arival</h4>
-                    <select name="id">
-                    <option value=">25.10.22</option>
-                    </select>
-                </div>  <div class="hero-choose">
-                    <h4> Departure</h4>
-                    <select name="id">
-                    <option value=">27.10.22</option>
-                    </select>
-                </div>
-                <button> Book</button>
-                
-
-            </section>
-        </main>
+        <nav>
+            <a href="#">About us</a>
+            <a href="#">Events</a>
+            <a href="#">Contact us</a>
+            <button>Book</button>
+        </nav>
+        
+        <div class="lang">
+            <img src="images/icons/lang.svg" alt="Language">
+            <span>En</span>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-choose">
+                <h4>Hotel or destination</h4>
+                <select name="destination">
+                    <option value="">Select</option> <!-- Исправлено: кавычки -->
+                </select>
+            </div>
+            
+            <div class="hero-choose">
+                <h4>Arrival</h4> <!-- Исправлена опечатка -->
+                <select name="arrival">
+                    <option value="">25.10.22</option> <!-- Исправлено: кавычки -->
+                </select>
+            </div>
+            
+            <div class="hero-choose">
+                <h4>Departure</h4>
+                <select name="departure">
+                    <option value="">27.10.22</option> <!-- Исправлено: кавычки -->
+                </select>
+            </div>
+            
+            <button class="hero-book">Book</button> <!-- Добавлен класс для стилизации -->
+        </section>
+    </main>
+</body>
+</html>
