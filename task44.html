@@ -1,186 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="task4.css"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riverside Hotel</title>
+  <link rel="stylesheet" href="task4.css" />
 </head>
 <body>
-    <header>
-        <!-- Ошибка: Не закрыт тег button -->
-        <button class="burger-btn">
-            <!-- Ошибка: Опечатка в пути (imagts вместо images) -->
-            <img src="images/icons/burger-menu.svg" alt="">
-        </button>
-    
-        <a href="task4.html" class="logo">
-            Riverside
-        </a>
-        
-        <nav>
-            <!-- Ошибка: Лишний пробел в тексте (Abuot вместо About) -->
-            <a href="#">About us</a>
-            <a href="#">Events</a>
-            <a href="#">Contact us</a>
-            <button>book</button>
-        </nav>
-        
-        <!-- Ошибка: Лишний двоеточие в классе -->
-        <div class="lang">
-            <!-- Ошибка: Опечатка в пути (imagts вместо images) -->
-            <img src="images/icons/lang.svg" alt="Логотип">
-            <span>En</span>
+
+  <!-- Header -->
+  <header>
+    <button class="burger-btn">
+      <img src="images/icons/burger-menu.svg" alt="Menu" />
+    </button>
+
+    <a href="index.html" class="logo">Riverside</a>
+
+    <nav>
+      <a href="#about-us">About us</a>
+      <a href="#our-events">Events</a>
+      <a href="#contact-us">Contact us</a>
+      <button class="header-btn">Book</button>
+    </nav>
+
+    <div class="lang">
+      <img src="images/icons/lang.svg" alt="Language icon" />
+      <span>En</span>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-choose">
+        <h4>Hotel or destination</h4>
+        <select name="destination">
+          <option value="">Select</option>
+        </select>
+      </div>
+
+      <div class="hero-choose">
+        <h4>Arrival</h4>
+        <select name="arrival">
+          <option value="">25.10.22</option>
+        </select>
+      </div>
+
+      <div class="hero-choose">
+        <h4>Departure</h4>
+        <select name="departure">
+          <option value="">27.10.22</option>
+        </select>
+      </div>
+
+      <button class="hero-btn">Book</button>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="about-us" id="about-us">
+    <h2>About Us</h2>
+    <p>The spacious rooms and suites at the RIVERSIDE Hotel are decorated in a contemporary style using modern and environmentally friendly materials.</p>
+    <p>They are equipped with orthopedic mattresses and hypoallergenic pillows, a modern ventilation, air conditioning and air purification system, a mini refrigerator, a Nespresso coffee machine and a flat-screen TV.</p>
+    <p>Free Wi-Fi is available in all rooms. Coffee, tea and water are provided in the rooms free of charge.</p>
+  </section>
+
+  <!-- Events -->
+  <section class="our-events" id="our-events">
+    <h2>Our Events</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cards/card-1.png" alt="Coctails & Bites" />
         </div>
-        <!-- Ошибка: Лишний закрывающий тег button -->
-    </header>
-    
-    <main>
-        <section class="hero">
-            <div class="hero-choose">
-                <h4>Hotel or destination</h4>
-                <!-- Ошибка: Лишний символ > в значении value -->
-                <select name="id">
-                    <option value="">Select</option>
-                </select>
-            </div>
-            
-            <div class="hero-choose">
-                <h4>Arrival</h4>
-                <!-- Ошибка: Опечатка в слове Arival, лишний символ > -->
-                <select name="id">
-                    <option value="">25.10.22</option>
-                </select>
-            </div>
-            
-            <div class="hero-choose">
-                <h4>Departure</h4>
-                <!-- Ошибка: Лишний символ > -->
-                <select name="id">
-                    <option value="">27.10.22</option>
-                </select>
-            </div>
-            
-            <button>Book</button>
-        </section>
-        
-        <section class="about-us">
-            <!-- Ошибка: Опечатка в id и тексте (Abuot вместо About) -->
-            <h2 id="about-us">About us</h2>
-            <p>The spacious rooms and suites at the RIVERSIDE Hotel are decorated in a contemporary style using modern and environmentally friendly materials.</p>
-            <p>They are equipped with orthopedic mattresses and hypoallergenic pillows, a modern ventilation, air conditioning and air purification system, a mini refrigerator, a Nespresso coffee machine and a flat-screen TV.</p>
-            <p>Free Wi-Fi is available in all rooms. Coffee, tea and water are provided in the rooms free of charge.</p>
-        </section>
-        
-        <section class="our-events">
-            <h2 id="our-events">Our Events</h2>
-            <div class="cards">
-                <div class="card">
-                    <!-- Ошибка: Пропущен = после alt -->
-                    <img src="images/cards/card-1.png" alt="">
-                    <div class="card-body">
-                        <h4>Coctails & Bites</h4>
-                        <p>Riverside Valencia</p>
-                    </div>
-                    <div class="card-date">
-                        <span class="card-date-day">24</span>
-                        <br>Oct
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img src="images/cards/card-2.png" alt="">
-                    <div class="card-body">
-                        <h4>Weekend Brunch</h4>
-                        <p>Riverside Valencia</p>
-                    </div>
-                    <div class="card-date">
-                        <span class="card-date-day">25</span>
-                        <br>Oct
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img src="images/cards/card-3.png" alt="">
-                    <div class="card-body">
-                        <h4>Piano Night</h4>
-                        <p>Riverside Atocha</p>
-                    </div>
-                    <div class="card-date">
-                        <span class="card-date-day">26</span>
-                        <br>Oct
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="contact-us">
-            <h2 id="contact-us">Contact Us</h2>
-            <!-- Ошибка: Пропущен id у формы -->
-            <form action="#" id="contact-form">
-                <div class="contact-form-fields">
-                    <input type="text" placeholder="Name*" required>
-                    <input type="text" placeholder="Surname*" required>
-                    <input type="text" placeholder="City">
-                    <input type="text" placeholder="Country">
-                    <input type="tel" placeholder="Phone">
-                    <input type="email" placeholder="Email*" required>
-                </div>
-                <!-- Ошибка: Неправильный синтаксис атрибутов -->
-                <textarea id="message" placeholder="Message*" required></textarea>
-                <button>Send</button>
-            </form>
-        </section>
-    </main>
-    
-    <footer>
-        <section class="footer-body">
-            <h3>Riverside</h3>
-            <div class="footer-body-links">
-                <ul>
-                    <h4>About</h4>
-                    <!-- Ошибка: Пропущен < в тегах a -->
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                
-                <ul>
-                    <!-- Ошибка: Опечатка в тексте (Rtservation) -->
-                    <h4>Reservation</h4>
-                    <li><a href="#">Request an invoice</a></li>
-                    <li><a href="#">Find a reservation</a></li>
-                    <li><a href="#">Email Preferences</a></li>
-                </ul>
-                
-                <ul>
-                    <h4>News</h4>
-                    <li><a href="#">Press Room</a></li>
-                    <li><a href="#">New Openings</a></li>
-                    <li><a href="#">Magazine</a></li>
-                    <li><a href="#">Newsletter</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-social-media">
-                <a href="#"><img src="images/icons/facebook.svg" alt="Facebook"></a>
-                <a href="#"><img src="images/icons/instagram.svg" alt="Instagram"></a>
-                <a href="#"><img src="images/icons/twitter.svg" alt="Twitter"></a>
-                <a href="#"><img src="images/icons/youtube.svg" alt="YouTube"></a>
-            </div>
-            
-            <div class="footer-policy">
-                <a href="#">Legal Notice</a>
-                <a href="#">Privacy Policy</a>
-                <!-- Ошибка: Опечатка в тексте (Preferaces) -->
-                <a href="#">Cookie Preferences</a>
-                <!-- Ошибка: Опечатка в тексте (Preferaces) -->
-                <a href="#">Cookie Accessibility Policy</a>
-            </div>
-            
-            <p class="rights">Riverside Hotel 1997-2002. All Rights Reserved.</p>
-        </section>
-    </footer>
+        <div class="card-body">
+          <h4>Coctails & Bites</h4>
+          <p>Riverside Valencia</p>
+        </div>
+        <div class="card-date">
+          <span class="card-date-day">24</span><br>Oct
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cards/card-2.png" alt="Weekend Brunch" />
+        </div>
+        <div class="card-body">
+          <h4>Weekend Brunch</h4>
+          <p>Riverside Valencia</p>
+        </div>
+        <div class="card-date">
+          <span class="card-date-day">25</span><br>Oct
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cards/card-3.png" alt="Piano Night" />
+        </div>
+        <div class="card-body">
+          <h4>Piano Night</h4>
+          <p>Riverside Atocha</p>
+        </div>
+        <div class="card-date">
+          <span class="card-date-day">26</span><br>Oct
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-us" id="contact-us">
+    <h2>Contact Us</h2>
+    <form action="#" id="contact-form" class="contact-form">
+      <div class="contact-form-fields">
+        <input type="text" placeholder="Name*" required>
+        <input type="text" placeholder="Surname*" required>
+        <input type="text" placeholder="City">
+        <input type="text" placeholder="Country">
+        <input type="tel" placeholder="Phone">
+        <input type="email" placeholder="Email*" required>
+      </div>
+      <textarea id="message" placeholder="Message*" required></textarea>
+      <button type="submit" class="contact-btn">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">Riverside</div>
+
+      <div class="footer-content">
+        <div class="footer-column">
+          <h4>About</h4>
+          <ul class="footer-links">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Reservation</h4>
+          <ul class="footer-links">
+            <li><a href="#">Request an invoice</a></li>
+            <li><a href="#">Find a reservation</a></li>
+            <li><a href="#">Email Preferences</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>News</h4>
+          <ul class="footer-links">
+            <li><a href="#">Press Room</a></li>
+            <li><a href="#">New Openings</a></li>
+            <li><a href="#">Magazine</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="#" class="social-link"><img src="images/icons/facebook.svg" alt="Facebook" /></a>
+        <a href="#" class="social-link"><img src="images/icons/instagram.svg" alt="Instagram" /></a>
+        <a href="#" class="social-link"><img src="images/icons/twitter.svg" alt="Twitter" /></a>
+        <a href="#" class="social-link"><img src="images/icons/youtube.svg" alt="YouTube" /></a>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="legal-links">
+          <a href="#">Legal Notice</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Preferences</a>
+          <a href="#">Accessibility Policy</a>
+        </div>
+        <p class="copyright">
+          © Riverside Hotel 1997–2025. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
