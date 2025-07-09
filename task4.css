@@ -93,7 +93,7 @@ nav a:hover {
 /* Герой */
 .hero {
   height: 600px;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images2/hero.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images2/hero.png') center/cover no-repeat;
   display: flex;
   align-items: flex-end;
   justify-content: center;
