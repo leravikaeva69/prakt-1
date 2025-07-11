@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link rel="stylesheet" href="reset.css">
-     <link rel="stylesheet" href="task6.css"> 
-     
-</head>>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="task6.css"> 
+</head>
 <body>
-     <script src="task6.js"></script>
-     <selection class="galltry">
-        <img id="big image"ssr="" alt="">
-        <div class="images/task6/id-1/jpg">
-            <img id="img-1" src ="images/task6/id-1/jpg" alt="">
-            <img id="img-2" src="images/task6/id-2/jpg"alt="">
-            <img id="img-3" src="images/task6/id-3/jpg"alt="">
-            <img id="img-4" src="images/task6/id-4/jpg"alt="">
-            <img id="img-5 "src="images/task6/id-5/jpg"alt="">
+    <section class="gallery"> <!-- Исправлено selection на section и galltry на gallery -->
+        <img id="big-image" src="" alt=""> <!-- Исправлено big image на big-image и удалено ssr -->
+        <div class="images"> <!-- Исправлено неправильный путь images/task6/id-1/jpg на images -->
+            <img id="img-1" src="images/task6/id-1.jpg" alt=""> <!-- Исправлено /jpg на .jpg -->
+            <img id="img-2" src="images/task6/id-2.jpg" alt="">
+            <img id="img-3" src="images/task6/id-3.jpg" alt="">
+            <img id="img-4" src="images/task6/id-4.jpg" alt="">
+            <img id="img-5" src="images/task6/id-5.jpg" alt=""> <!-- Удален лишний пробел в id="img-5 " -->
         </div>
-     </selection>
-       
+    </section>
+    <script src="task6.js"></script> <!-- Перенес скрипт в конец body для лучшей производительности -->
 </body>
 </html>
